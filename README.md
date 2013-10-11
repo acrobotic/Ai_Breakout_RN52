@@ -15,7 +15,7 @@ Please consider buying products from Acrobotic to help fund future Open-Source p
 
 [Tutorials, technical details, and more information about this product can be found here: http://acrobotic.com/catalog/product/view/id/64][1]
 
-[We also carry the standalone RN52 module on our store!][3]
+We also [carry the standalone RN52 module in our store!][3]
 
 License Information
 ---
@@ -26,4 +26,4 @@ All contents of this repository are licensed under a [Creative Commons Attributi
 
 [1]: http://acrobotic.com/catalog/product/view/id/64 "RN52 Bluetooth Audio Module Breakout Board"
 [2]: http://learn.acrobotic.com/RN52 "Acrobotic RN52 Tutorial"
-[1]: http://acrobotic.com/catalog/product/view/id/63 "RN52 Bluetooth Audio Module"
+[3]: http://acrobotic.com/catalog/product/view/id/63 "RN52 Bluetooth Audio Module"
