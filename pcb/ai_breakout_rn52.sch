@@ -3,7 +3,7 @@
 <eagle version="6.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -71,7 +71,12 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="Route13" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -80,15 +85,39 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -14942,7 +14971,7 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="11" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
+<pad name="11" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="12" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="13" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="14" x="8.89" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -15064,12 +15093,10 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="6.8" y1="14.33" x2="-6.8" y2="14.33" width="0.127" layer="51"/>
 <wire x1="-6.8" y1="14.33" x2="-6.8" y2="-11.67" width="0.127" layer="51"/>
 <wire x1="-6.8" y1="-11.67" x2="6.8" y2="-11.67" width="0.127" layer="51"/>
-<wire x1="-6.8" y1="14.33" x2="-5.8" y2="14.33" width="0.2032" layer="21"/>
-<wire x1="-6.8" y1="14.33" x2="-6.8" y2="13.33" width="0.2032" layer="21"/>
-<wire x1="6.8" y1="14.33" x2="5.8" y2="14.33" width="0.2032" layer="21"/>
-<wire x1="6.8" y1="14.33" x2="6.8" y2="13.33" width="0.2032" layer="21"/>
-<wire x1="6.8" y1="-11.67" x2="6.8" y2="9.83" width="0.127" layer="21"/>
-<wire x1="-6.8" y1="-11.67" x2="-6.8" y2="9.83" width="0.127" layer="21"/>
+<wire x1="-6.8" y1="14.33" x2="-5.8" y2="14.33" width="0.2032" layer="51"/>
+<wire x1="-6.8" y1="14.33" x2="-6.8" y2="13.33" width="0.2032" layer="51"/>
+<wire x1="6.8" y1="14.33" x2="5.8" y2="14.33" width="0.2032" layer="51"/>
+<wire x1="6.8" y1="14.33" x2="6.8" y2="13.33" width="0.2032" layer="51"/>
 <smd name="2" x="-6.6" y="8.33" dx="1.2" dy="0.8" layer="1"/>
 <smd name="3" x="-6.6" y="7.13" dx="1.2" dy="0.8" layer="1"/>
 <smd name="4" x="-6.6" y="5.93" dx="1.2" dy="0.8" layer="1"/>
@@ -15120,11 +15147,9 @@ Standard 8.5x11 US Letter frame</description>
 <smd name="47" x="0.7" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
 <smd name="46" x="2.1" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
 <smd name="45" x="3.5" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<wire x1="6.7972" y1="-11.6714" x2="6.7972" y2="14.3286" width="0.127" layer="51"/>
 <wire x1="6.7972" y1="14.3286" x2="-6.8028" y2="14.3286" width="0.127" layer="51"/>
-<wire x1="-6.8028" y1="14.3286" x2="-6.8028" y2="-11.6714" width="0.127" layer="51"/>
 <wire x1="-6.8028" y1="-11.6714" x2="6.7972" y2="-11.6714" width="0.127" layer="51"/>
-<text x="-7.62" y="-13.97" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-7.62" y="-13.97" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15260,9 +15285,9 @@ Standard 8.5x11 US Letter frame</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2032" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="power" width="0.254" drill="0">
+<class number="1" name="power" width="0.3048" drill="0">
 </class>
 </classes>
 <parts>
@@ -15278,7 +15303,7 @@ Standard 8.5x11 US Letter frame</description>
 <part name="U$2" library="Ai_Power" deviceset="3V3" device=""/>
 <part name="J2" library="Ai_Connectors" deviceset="1X20" device=""/>
 <part name="J1" library="Ai_Connectors" deviceset="1X20" device=""/>
-<part name="IC1" library="Ai_IC" deviceset="RN-52" device=""/>
+<part name="RN-52" library="Ai_IC" deviceset="RN-52" device=""/>
 <part name="GND1" library="Ai_Power" deviceset="GND" device=""/>
 <part name="GND2" library="Ai_Power" deviceset="GND" device=""/>
 <part name="U$3" library="Ai_Miscellany" deviceset="AI-LOGO" device="L"/>
@@ -15301,64 +15326,64 @@ Standard 8.5x11 US Letter frame</description>
 <instance part="U$2" gate="G$1" x="111.76" y="58.42"/>
 <instance part="J2" gate="G$1" x="170.18" y="105.41" rot="MR0"/>
 <instance part="J1" gate="G$1" x="49.53" y="106.68" rot="MR180"/>
-<instance part="IC1" gate="G$1" x="109.22" y="109.22"/>
+<instance part="RN-52" gate="G$1" x="109.22" y="109.22"/>
 <instance part="GND1" gate="GND" x="132.08" y="62.23"/>
 <instance part="GND2" gate="GND" x="86.36" y="62.23"/>
-<instance part="U$3" gate="G$1" x="7.62" y="7.62"/>
+<instance part="U$3" gate="G$1" x="137.16" y="10.16"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
 <label x="162.56" y="81.28" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND@10"/>
+<pinref part="RN-52" gate="G$1" pin="GND@10"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
 <wire x1="129.54" y1="69.85" x2="132.08" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="69.85" x2="132.08" y2="64.77" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@9"/>
+<pinref part="RN-52" gate="G$1" pin="GND@9"/>
 <wire x1="129.54" y1="72.39" x2="132.08" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="72.39" x2="132.08" y2="69.85" width="0.1524" layer="91"/>
 <junction x="132.08" y="69.85"/>
-<pinref part="IC1" gate="G$1" pin="GND@8"/>
+<pinref part="RN-52" gate="G$1" pin="GND@8"/>
 <wire x1="129.54" y1="74.93" x2="132.08" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="74.93" x2="132.08" y2="72.39" width="0.1524" layer="91"/>
 <junction x="132.08" y="72.39"/>
-<pinref part="IC1" gate="G$1" pin="GND@7"/>
+<pinref part="RN-52" gate="G$1" pin="GND@7"/>
 <wire x1="129.54" y1="77.47" x2="132.08" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="77.47" x2="132.08" y2="74.93" width="0.1524" layer="91"/>
 <junction x="132.08" y="74.93"/>
-<pinref part="IC1" gate="G$1" pin="GND@6"/>
+<pinref part="RN-52" gate="G$1" pin="GND@6"/>
 <wire x1="129.54" y1="80.01" x2="132.08" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="80.01" x2="132.08" y2="77.47" width="0.1524" layer="91"/>
 <junction x="132.08" y="77.47"/>
-<pinref part="IC1" gate="G$1" pin="GND@5"/>
+<pinref part="RN-52" gate="G$1" pin="GND@5"/>
 <wire x1="129.54" y1="82.55" x2="132.08" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="82.55" x2="132.08" y2="80.01" width="0.1524" layer="91"/>
 <junction x="132.08" y="80.01"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="AGND"/>
+<pinref part="RN-52" gate="G$1" pin="AGND"/>
 <pinref part="GND2" gate="GND" pin="GND"/>
 <wire x1="88.9" y1="72.39" x2="86.36" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="72.39" x2="86.36" y2="64.77" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@4"/>
+<pinref part="RN-52" gate="G$1" pin="GND@4"/>
 <wire x1="88.9" y1="74.93" x2="86.36" y2="74.93" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="74.93" x2="86.36" y2="72.39" width="0.1524" layer="91"/>
 <junction x="86.36" y="72.39"/>
-<pinref part="IC1" gate="G$1" pin="GND@3"/>
+<pinref part="RN-52" gate="G$1" pin="GND@3"/>
 <wire x1="88.9" y1="77.47" x2="86.36" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="77.47" x2="86.36" y2="74.93" width="0.1524" layer="91"/>
 <junction x="86.36" y="74.93"/>
-<pinref part="IC1" gate="G$1" pin="GND@2"/>
+<pinref part="RN-52" gate="G$1" pin="GND@2"/>
 <wire x1="88.9" y1="80.01" x2="86.36" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="80.01" x2="86.36" y2="77.47" width="0.1524" layer="91"/>
 <junction x="86.36" y="77.47"/>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
+<pinref part="RN-52" gate="G$1" pin="GND@1"/>
 <wire x1="88.9" y1="82.55" x2="86.36" y2="82.55" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="82.55" x2="86.36" y2="80.01" width="0.1524" layer="91"/>
 <junction x="86.36" y="80.01"/>
@@ -15390,7 +15415,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="106.68" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="LED0"/>
+<pinref part="RN-52" gate="G$1" pin="LED0"/>
 <wire x1="129.54" y1="118.11" x2="132.08" y2="118.11" width="0.1524" layer="91"/>
 <label x="132.08" y="118.11" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15407,17 +15432,17 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="104.14" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="LED1"/>
+<pinref part="RN-52" gate="G$1" pin="LED1"/>
 <wire x1="129.54" y1="115.57" x2="132.08" y2="115.57" width="0.1524" layer="91"/>
 <label x="132.08" y="115.57" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
 </net>
-<net name="3V3" class="0">
+<net name="3V3" class="1">
 <segment>
 <wire x1="88.9" y1="146.05" x2="86.36" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="146.05" x2="86.36" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="3V3"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="RN-52" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -15440,7 +15465,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="140.97" x2="86.36" y2="140.97" width="0.1524" layer="91"/>
 <label x="86.36" y="140.97" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="PWREN"/>
+<pinref part="RN-52" gate="G$1" pin="PWREN"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="85.09" x2="57.15" y2="85.09" width="0.1524" layer="91"/>
@@ -15452,7 +15477,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="135.89" x2="86.36" y2="135.89" width="0.1524" layer="91"/>
 <label x="86.36" y="135.89" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO3"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO3"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="130.81" x2="57.15" y2="130.81" width="0.1524" layer="91"/>
@@ -15464,7 +15489,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="133.35" x2="86.36" y2="133.35" width="0.1524" layer="91"/>
 <label x="86.36" y="133.35" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO2"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO2"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="128.27" x2="57.15" y2="128.27" width="0.1524" layer="91"/>
@@ -15476,7 +15501,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="128.27" x2="86.36" y2="128.27" width="0.1524" layer="91"/>
 <label x="86.36" y="128.27" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO4"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO4"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="123.19" x2="57.15" y2="123.19" width="0.1524" layer="91"/>
@@ -15488,7 +15513,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="125.73" x2="86.36" y2="125.73" width="0.1524" layer="91"/>
 <label x="86.36" y="125.73" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO5"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO5"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="120.65" x2="57.15" y2="120.65" width="0.1524" layer="91"/>
@@ -15500,7 +15525,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="123.19" x2="86.36" y2="123.19" width="0.1524" layer="91"/>
 <label x="86.36" y="123.19" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO12"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO12"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="118.11" x2="57.15" y2="118.11" width="0.1524" layer="91"/>
@@ -15512,7 +15537,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="120.65" x2="86.36" y2="120.65" width="0.1524" layer="91"/>
 <label x="86.36" y="120.65" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO13"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO13"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="115.57" x2="57.15" y2="115.57" width="0.1524" layer="91"/>
@@ -15524,7 +15549,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="118.11" x2="86.36" y2="118.11" width="0.1524" layer="91"/>
 <label x="86.36" y="118.11" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO11"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO11"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="113.03" x2="57.15" y2="113.03" width="0.1524" layer="91"/>
@@ -15536,7 +15561,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="115.57" x2="86.36" y2="115.57" width="0.1524" layer="91"/>
 <label x="86.36" y="115.57" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO10"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO10"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="110.49" x2="57.15" y2="110.49" width="0.1524" layer="91"/>
@@ -15548,7 +15573,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="113.03" x2="86.36" y2="113.03" width="0.1524" layer="91"/>
 <label x="86.36" y="113.03" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO9"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO9"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="107.95" x2="57.15" y2="107.95" width="0.1524" layer="91"/>
@@ -15560,7 +15585,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="110.49" x2="86.36" y2="110.49" width="0.1524" layer="91"/>
 <label x="86.36" y="110.49" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO7"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO7"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="90.17" x2="57.15" y2="90.17" width="0.1524" layer="91"/>
@@ -15572,7 +15597,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="107.95" x2="86.36" y2="107.95" width="0.1524" layer="91"/>
 <label x="86.36" y="107.95" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="GPIO6"/>
+<pinref part="RN-52" gate="G$1" pin="GPIO6"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="87.63" x2="57.15" y2="87.63" width="0.1524" layer="91"/>
@@ -15584,7 +15609,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="130.81" x2="86.36" y2="130.81" width="0.1524" layer="91"/>
 <label x="86.36" y="130.81" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="AICO0"/>
+<pinref part="RN-52" gate="G$1" pin="AICO0"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="125.73" x2="57.15" y2="125.73" width="0.1524" layer="91"/>
@@ -15596,7 +15621,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="102.87" x2="86.36" y2="102.87" width="0.1524" layer="91"/>
 <label x="86.36" y="102.87" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="USBD-"/>
+<pinref part="RN-52" gate="G$1" pin="USBD-"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="105.41" x2="57.15" y2="105.41" width="0.1524" layer="91"/>
@@ -15608,7 +15633,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="100.33" x2="86.36" y2="100.33" width="0.1524" layer="91"/>
 <label x="86.36" y="100.33" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="USBD+"/>
+<pinref part="RN-52" gate="G$1" pin="USBD+"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="102.87" x2="57.15" y2="102.87" width="0.1524" layer="91"/>
@@ -15620,7 +15645,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="95.25" x2="86.36" y2="95.25" width="0.1524" layer="91"/>
 <label x="86.36" y="95.25" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="UART_RTS"/>
+<pinref part="RN-52" gate="G$1" pin="UART_RTS"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="100.33" x2="57.15" y2="100.33" width="0.1524" layer="91"/>
@@ -15632,7 +15657,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="92.71" x2="86.36" y2="92.71" width="0.1524" layer="91"/>
 <label x="86.36" y="92.71" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="UART_CTS"/>
+<pinref part="RN-52" gate="G$1" pin="UART_CTS"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="97.79" x2="57.15" y2="97.79" width="0.1524" layer="91"/>
@@ -15644,7 +15669,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="90.17" x2="86.36" y2="90.17" width="0.1524" layer="91"/>
 <label x="86.36" y="90.17" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="UART_TX"/>
+<pinref part="RN-52" gate="G$1" pin="UART_TX"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="95.25" x2="57.15" y2="95.25" width="0.1524" layer="91"/>
@@ -15656,7 +15681,7 @@ Standard 8.5x11 US Letter frame</description>
 <segment>
 <wire x1="88.9" y1="87.63" x2="86.36" y2="87.63" width="0.1524" layer="91"/>
 <label x="86.36" y="87.63" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
-<pinref part="IC1" gate="G$1" pin="UART_RX"/>
+<pinref part="RN-52" gate="G$1" pin="UART_RX"/>
 </segment>
 <segment>
 <wire x1="54.61" y1="92.71" x2="57.15" y2="92.71" width="0.1524" layer="91"/>
@@ -15666,7 +15691,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="SPKR_L+" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPKR_L+"/>
+<pinref part="RN-52" gate="G$1" pin="SPKR_L+"/>
 <wire x1="129.54" y1="146.05" x2="132.08" y2="146.05" width="0.1524" layer="91"/>
 <label x="132.08" y="146.05" size="1.27" layer="95" ratio="15" xref="yes"/>
 </segment>
@@ -15679,7 +15704,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="SPKR_R+" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPKR_R+"/>
+<pinref part="RN-52" gate="G$1" pin="SPKR_R+"/>
 <wire x1="129.54" y1="143.51" x2="132.08" y2="143.51" width="0.1524" layer="91"/>
 <label x="132.08" y="143.51" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15691,7 +15716,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="SPKR_L-" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPKR_L-"/>
+<pinref part="RN-52" gate="G$1" pin="SPKR_L-"/>
 <wire x1="129.54" y1="140.97" x2="132.08" y2="140.97" width="0.1524" layer="91"/>
 <label x="132.08" y="140.97" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15703,7 +15728,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="SPKR_R-" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPKR_R-"/>
+<pinref part="RN-52" gate="G$1" pin="SPKR_R-"/>
 <wire x1="129.54" y1="138.43" x2="132.08" y2="138.43" width="0.1524" layer="91"/>
 <label x="132.08" y="138.43" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15715,7 +15740,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="MIC_R-" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="MIC_R-"/>
+<pinref part="RN-52" gate="G$1" pin="MIC_R-"/>
 <wire x1="129.54" y1="133.35" x2="132.08" y2="133.35" width="0.1524" layer="91"/>
 <label x="132.08" y="133.35" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15727,7 +15752,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="MIC_L-" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="MIC_L-"/>
+<pinref part="RN-52" gate="G$1" pin="MIC_L-"/>
 <wire x1="129.54" y1="130.81" x2="132.08" y2="130.81" width="0.1524" layer="91"/>
 <label x="132.08" y="130.81" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15739,7 +15764,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="MIC_R+" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="MIC_R+"/>
+<pinref part="RN-52" gate="G$1" pin="MIC_R+"/>
 <wire x1="129.54" y1="128.27" x2="132.08" y2="128.27" width="0.1524" layer="91"/>
 <label x="132.08" y="128.27" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15751,7 +15776,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="MIC_L+" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="MIC_L+"/>
+<pinref part="RN-52" gate="G$1" pin="MIC_L+"/>
 <wire x1="129.54" y1="125.73" x2="132.08" y2="125.73" width="0.1524" layer="91"/>
 <label x="132.08" y="125.73" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15763,7 +15788,7 @@ Standard 8.5x11 US Letter frame</description>
 </net>
 <net name="MIC_BIAS" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="MIC_BIAS"/>
+<pinref part="RN-52" gate="G$1" pin="MIC_BIAS"/>
 <wire x1="129.54" y1="123.19" x2="132.08" y2="123.19" width="0.1524" layer="91"/>
 <label x="132.08" y="123.19" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15780,7 +15805,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="101.6" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPI_MOSI"/>
+<pinref part="RN-52" gate="G$1" pin="SPI_MOSI"/>
 <wire x1="129.54" y1="110.49" x2="132.08" y2="110.49" width="0.1524" layer="91"/>
 <label x="132.08" y="110.49" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15792,7 +15817,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="99.06" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPI_CLK"/>
+<pinref part="RN-52" gate="G$1" pin="SPI_CLK"/>
 <wire x1="129.54" y1="107.95" x2="132.08" y2="107.95" width="0.1524" layer="91"/>
 <label x="132.08" y="107.95" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15804,7 +15829,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="96.52" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPI_MISO"/>
+<pinref part="RN-52" gate="G$1" pin="SPI_MISO"/>
 <wire x1="129.54" y1="105.41" x2="132.08" y2="105.41" width="0.1524" layer="91"/>
 <label x="132.08" y="105.41" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15816,7 +15841,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="93.98" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SPI_SS"/>
+<pinref part="RN-52" gate="G$1" pin="SPI_SS"/>
 <wire x1="129.54" y1="102.87" x2="132.08" y2="102.87" width="0.1524" layer="91"/>
 <label x="132.08" y="102.87" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15828,7 +15853,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="91.44" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PCM_CLK"/>
+<pinref part="RN-52" gate="G$1" pin="PCM_CLK"/>
 <wire x1="129.54" y1="90.17" x2="132.08" y2="90.17" width="0.1524" layer="91"/>
 <label x="132.08" y="90.17" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15840,7 +15865,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="88.9" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PCM_SYNC"/>
+<pinref part="RN-52" gate="G$1" pin="PCM_SYNC"/>
 <wire x1="129.54" y1="92.71" x2="132.08" y2="92.71" width="0.1524" layer="91"/>
 <label x="132.08" y="92.71" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15852,7 +15877,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="86.36" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PCM_OUT"/>
+<pinref part="RN-52" gate="G$1" pin="PCM_OUT"/>
 <wire x1="129.54" y1="95.25" x2="132.08" y2="95.25" width="0.1524" layer="91"/>
 <label x="132.08" y="95.25" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
@@ -15864,7 +15889,7 @@ Standard 8.5x11 US Letter frame</description>
 <label x="162.56" y="83.82" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PCM_IN"/>
+<pinref part="RN-52" gate="G$1" pin="PCM_IN"/>
 <wire x1="129.54" y1="97.79" x2="132.08" y2="97.79" width="0.1524" layer="91"/>
 <label x="132.08" y="97.79" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
